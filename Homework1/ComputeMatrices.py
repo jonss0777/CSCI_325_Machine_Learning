@@ -1,10 +1,6 @@
-# you should fill in the functions in this file,
-# do NOT change the name, input and output of these functions
-
 import numpy as np
 import time
 import matplotlib.pyplot as plt
-# Notes
 
 # first function to fill, compute distance matrix using loops
 def compute_distance_naive(X):
@@ -17,8 +13,7 @@ def compute_distance_naive(X):
             xi = X[i,:]
             xj = X[j,:]
             dist = np.sqrt(np.sum((X[i, :] - X[j,:] )**2) )
-            M[i,j] = dist
-            
+            M[i,j] = dist         
     return M
 
 # second function to fill, compute distance matrix without loops
@@ -27,8 +22,7 @@ def compute_distance_smart(X):
     D = X.shape[1]  # num of cols
     norm_squared = np.sum(X**2,axis=1)
     dot_product = np.dot(X, X.T)
-    M = np.sqrt(np.clip(norm_squared[:,np.newaxis] + norm_squared[np.newaxis,:] -2*dot_product, 0, None))
-    
+    M = np.sqrt(np.clip(norm_squared[:,np.newaxis] + norm_squared[np.newaxis,:] -2*dot_product, 0, None))  
     return M
 
 
