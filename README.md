@@ -4,9 +4,9 @@
 
 - Calculating distance matrix and correlation matrix.
   - Naive approach
-  - Using matrices
+  - Optimized using matrices
  
   Results:
-  ![Comparing_Correlation_Methods](Comparing_Correlation_Methods.png)
+  ![Comparing_Correlation_Methods](Comparing_Correlation_Methods.png = 250x250)
  
-  ![Comparing_Distance_Computation_Methods](Comparing_Distance_Computation_Methods.png)
+  ![Comparing_Distance_Computation_Methods](Comparing_Distance_Computation_Methods.png = =250x250)
