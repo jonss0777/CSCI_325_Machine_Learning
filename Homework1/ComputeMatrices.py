@@ -4,14 +4,7 @@
 import numpy as np
 import time
 import matplotlib.pyplot as plt
-
-
 # Notes
-
-# What is the pairwise eucledian distance?
-# Calculating the pairwise eucledian distance allows us to create a 
-# distance matrix between vectors, similar to the distance matrix of a weighted graph. 
-
 
 # first function to fill, compute distance matrix using loops
 def compute_distance_naive(X):
@@ -23,48 +16,21 @@ def compute_distance_naive(X):
         for j in range(N): 
             xi = X[i,:]
             xj = X[j,:]
-         
-            #square_length_xi = sum([x**2 for x in xi])
-            #square_length_xj = sum([x**2 for x in xj])
-            #dot_product = sum([xi[k] * xj[k] for k in range(D)])
             dist = np.sqrt(np.sum((X[i, :] - X[j,:] )**2) )
-            #  dist = math.sqrt(max(square_length_xi -2*dot_product + square_length_xj, 0))
-
             M[i,j] = dist
             
     return M
-
-
 
 # second function to fill, compute distance matrix without loops
 def compute_distance_smart(X):
     N = X.shape[0]  # num of rows
     D = X.shape[1]  # num of cols
-    
-    # use X to create M
-     
     norm_squared = np.sum(X**2,axis=1)
     dot_product = np.dot(X, X.T)
     M = np.sqrt(np.clip(norm_squared[:,np.newaxis] + norm_squared[np.newaxis,:] -2*dot_product, 0, None))
     
     return M
 
-
-'''
-What is a correlation matrix?
-
-https://www.questionpro.com/blog/correlation-matrix/
-
-A covarian matrix can help identify hidden relationships in a dataset.
-
-It displays correlation coefficients that meassyre the strength and direction of relationships between variables.
-
-Ranges (-1, +1) -> 1 means a perfect negative correlation, 1 means a perfect positive correlation and 0 means there is zero correlation
-between the variables.
-
-It can be useful to identify variables that are correlated which are useful for a ML model. 
-
-'''
 
 # third function to fill, compute correlation matrix using loops
 def compute_correlation_naive(X):
