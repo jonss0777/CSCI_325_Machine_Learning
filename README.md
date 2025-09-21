@@ -9,4 +9,9 @@
   Results:
   ![Comparing_Correlation_Methods](Comparing_Correlation_Methods.png | 250)
  
-  ![Comparing_Distance_Computation_Methods](Comparing_Distance_Computation_Methods.png |250)
+  <img alt="Comparing_Distance_Computation_Methods" src="https://github.com/jonss0777/CSCI_325_Machine_Learning/blob/1dd9d6f7c6345098754c3b7390574bb6360d7e7a/Comparing_Distance_Computation_Methods.png" width="200" height="100">
+   <img alt="Comparing_Correlation_Methods" src="https://github.com/jonss0777/CSCI_325_Machine_Learning/blob/1dd9d6f7c6345098754c3b7390574bb6360d7e7a/Comparing_Correlation_Methods.png" width="200" height="100">
+
+ 
+  ![Comparing_Distance_Computation_Methods](https://github.com/jonss0777/CSCI_325_Machine_Learning/blob/1dd9d6f7c6345098754c3b7390574bb6360d7e7a/Comparing_Distance_Computation_Methods.png)
+
